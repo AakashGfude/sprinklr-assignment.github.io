@@ -1,0 +1,20 @@
+<div class="table-area">
+    <div class="tableNo">
+        <p ng-cloak>table {{$index + 1}}</p>
+    </div>
+    <div ng-repeat="(childkey,childValue) in parentvalue" ng-class="{'table-seats-even':$even,'table-seats-odd':$odd,'table-seats-next': $index>1,'table-occupied':childValue.name}" custom-popover popover-placement="right" popover-label="Label" data-class="popover-settings">
+    <div class="heyy" style="display:none">
+    <div ng-if="childValue.name">
+    	<img ng-src="{{childValue.img}}" class="circular-image">
+    	<h4 ng-cloak>{{childValue.name}}</h4>
+    	<h6 ng-cloak>{{childValue.designation}}</h6>
+    	<p class="quick-view-heading">Team</p>
+    	<h6 ng-cloak>{{childValue.team}}</h6>
+    	<p class="quick-view-heading">Project</p>
+    	<h6 ng-cloak>{{childValue.currentProject}}</h6>
+    	</div>
+    <div ng-if="!childValue.name">
+    	<p style="text-align:center">This seat is empty</p>
+    </div>
+    </div>
+</div>

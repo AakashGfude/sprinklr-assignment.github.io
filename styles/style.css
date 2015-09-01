@@ -1,0 +1,133 @@
+body {
+  background-color: #e6e6e6; }
+
+#container {
+  margin-top: 30px; }
+
+#logo {
+  background-color: #B3B3B3;
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px; }
+
+h2 {
+  display: inline-block;
+  margin-left: 150px; }
+
+#search-query {
+  /* background: url(images/search.png) no-repeat right;*/
+  background-size: 20px 20px;
+  background-color: white;
+  margin-left: 55%;
+  width: 300px;
+  height: 35px; }
+
+#filter_icon {
+  width: 30px;
+  height: 30px; }
+
+#employee-view {
+  background-color: white;
+  min-height: 400px;
+  width: 76%;
+  border: 1px solid black;
+  margin: auto;
+  overflow: hidden; }
+
+.table-area {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  padding: 30px;
+  position: relative; }
+
+.tableNo {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: #e6e6e6;
+  position: relative;
+  z-index: 10; }
+
+.table-container {
+  float: left; }
+
+.glyphicon-search {
+  position: absolute;
+  right: 11px;
+  top: 13px; }
+
+.table-seats-odd, .table-seats-even {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #B3B3B3;
+  position: absolute;
+  top: 0px; }
+
+.table-seats-odd {
+  left: 160px; }
+
+.table-seats-even {
+  left: 40px; }
+
+.table-seats-next {
+  top: 117px; }
+
+.table-occupied {
+  background-color: black; }
+
+#email-message {
+  display: none;
+  background-color: #B3B3B3;
+  width: 76%;
+  height: 40px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px; }
+
+.popover.bottom {
+  left: -477px !important;
+  display: block;
+  min-width: 542px !important;
+  font-size: 10px; }
+
+.popover.bottom > .arrow {
+  left: 93% !important; }
+
+.m-t14 {
+  margin-top: 14px; }
+
+.m-r11 {
+  margin-right: 11px !important; }
+
+.search-result {
+  background-color: #00aeef !important; }
+
+.quick-view-heading {
+  color: #9a9a9a;
+  font-weight: 600;
+  font-size: 10px; }
+
+.circular-image {
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+  border-color: 1px solid black;
+  margin-right: 10px; }
+
+.right.in {
+  width: 240px; }
+
+/*# sourceMappingURL=style.css.map */

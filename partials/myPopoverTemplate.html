@@ -1,0 +1,50 @@
+<div class="popover-content">
+			<input type="checkbox" ng-model="teams.select_team" class="m-r11"> <span style="margin-right: 100px">Team</span>
+			<input type="checkbox" name="jobtitle" ng-model="jobs.select_job" class="m-r11"><span>Job Title</span>
+			<div class="teamContent row" ng-if="teams.select_team">
+			<hr class="extended-content"/>
+			<div class="col-md-4">
+				<input type="checkbox" ng-model="teams.web_frontend" class="m-r11">Web Frontend
+				<br/>
+				<input type="checkbox" ng-model="teams.mobile_frontend" class="m-r11">Mobile Frontend
+			</div>
+			<div class="col-md-4">
+				<input type="checkbox" ng-model="teams.mobile_backend" class="m-r11">Mobile Backend
+				<br/>
+				<input type="checkbox" ng-model="teams.data_mining" class="m-r11">Data Mining
+			</div>
+			<div class="col-md-4">
+				<input type="checkbox" ng-model="teams.design_team" class="m-r11">Design Team
+				<br/>
+				<input type="checkbox" ng-model="teams.testing_team" class="m-r11">Testing Team
+			</div>
+			</div>
+			<div class="JobTitleContent row" ng-if="jobs.select_job">
+				<hr class="extended-content"/>
+			<div class="col-md-4">
+				<input type="checkbox" ng-model="jobs.ux_designer" class="m-r11">UX Designer
+				<br/>
+				<input type="checkbox" ng-model="jobs.testing_engineer" class="m-r11">Testing Engineer
+				<br/>
+				<input type="checkbox" ng-model="jobs.senior_ux_designer" class="m-r11">Senior UX Designer
+				<br/>
+			</div>
+			<div class="col-md-4">
+				<input type="checkbox" ng-model="jobs.back_end_developer" class="m-r11">Back End Developer
+				<br/>
+				<input type="checkbox" ng-model="jobs.senior_software_developer" class="m-r11">Senior Software Developer
+				<br/>
+				<input type="checkbox" ng-model="jobs.software_developer" class="m-r11">Software Developer
+			</div>
+			<div class="col-md-4">
+				<input type="checkbox" ng-model="jobs.frontend_developer" class="m-r11">Frontend Developer
+				<br/>
+				<input type="checkbox" ng-model="jobs.full_stack_developer" class="m-r11">Full Stack Developer
+				<br/>
+				<input type="checkbox" ng-model="jobs.data_analyst" class="m-r11">Data Analyst
+				<br/>
+				<input type="checkbox" ng-model="jobs.data_scientist" class="m-r11">Data Scientist
+				<br/>
+			</div>
+			</div>
+		</div>

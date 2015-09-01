@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div id="logo">Spot</div>
+<div ng-app="user" ng-controller="MainController" id="container">
+	<div class="row">
+	<div class="col-md-4">
+	<h2>Sprinklr Office</h2>
+	</div>
+	<div class="col-md-6 m-t14">
+	<input type="text" auto-complete items="names" ng-model="selected" id="search-query" placehoder="search">
+	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+	</div>
+	<div class="col-md-2 m-t14">
+		<div filter-directive popover-template="dynamicPopover.templateUrl" popover-placement="bottom" style="width:40px">
+		<img src="images/filter.png" id="filter_icon">
+		
+		</div>
+	</div>
+	</div>
+	<div id="employee-view" style="padding-bottom:100px">
+		<div ng-repeat="(parentkey,parentvalue) in getData" class="table-container">
+			<div spot-table></div>
+		</div>
+	</div>
+	<div id="email-message">
+		<p ng-cloak>{{emailData.emailName}} has been moved from {{emailData.emailInitialTable}} to {{emailData.emailFinalTable}}. A mail regarding this has been sent to {{emailData.emailName}}</p>
+	</div>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/ui-bootstrap-tpls-0.13.3.min.js"></script>
+<script src="scripts/app.js"></script>
+</html>
